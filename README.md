@@ -6,8 +6,8 @@ A comprehensive CI/CD configuration management tool for enterprise deployments.
 - **Version**: 3.0.0-experimental (Production + AI Testing)
 - **Environment**: Production & Development
 - **Maintainer**: DevOps Team
-- **Student**: [YOUR NAME]
-- **Student ID**: [YOUR ID]
+- **Student**:G Sirinethikonda
+- **Student ID**:23A91A61F1
 
 ## Features
 
