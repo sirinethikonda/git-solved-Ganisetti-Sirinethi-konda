@@ -95,3 +95,11 @@ environments:
       zero_trust: enabled
       encryption: AES-256
       audit_logging: comprehensive
+features:
+  auto_scaling: true
+  load_balancer: enabled
+
+# Experimental features (inactive by default)
+# features:
+#   predictive_scaling: true
+#   chaos_engineering: enabled
