@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-# Multi-Environment Deploy Script
-# Default to production if not specified
 DEPLOY_ENV=${DEPLOY_ENV:-production}
 
 echo "====================================="
@@ -17,23 +15,24 @@ if [ "$DEPLOY_ENV" = "production" ]; then
     echo "Region: $DEPLOY_REGION"
     echo "Port: $APP_PORT"
     echo "Starting production deployment..."
-    # Add production deployment commands here
-    # e.g., docker run, kubectl apply, etc.
 
 elif [ "$DEPLOY_ENV" = "development" ]; then
     echo "Mode: Development"
-    DEPLOY_MODE="docker-compose"
     APP_PORT=3000
     echo "Environment: $DEPLOY_ENV"
-    echo "Mode: $DEPLOY_MODE"
     echo "Installing dependencies..."
     npm install
     echo "Starting development server..."
-    # Add development start commands here
-    # e.g., docker-compose up, npm start, etc.
+    
+elif [ "$DEPLOY_ENV" = "experimental" ]; then
+    echo "Mode: Experimental AI"
+    APP_PORT=9000
+    echo "Environment: $DEPLOY_ENV"
+    echo "Initializing AI deployment..."
+    npm run start:ai
 
 else
-    echo "Error: Unknown environment '$DEPLOY_ENV'"
+    echo "Error: Unknown environment $DEPLOY_ENV"
     exit 1
 fi
 
