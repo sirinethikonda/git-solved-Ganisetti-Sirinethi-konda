@@ -4,8 +4,8 @@ A comprehensive CI/CD configuration management tool for enterprise deployments.
 ## Project Status
 - **Version**: 3.0.0-experimental (Production + AI Testing)
 - **Environments**: Production & Development
-- **Student**: [YOUR NAME]
-- **Student ID**: [YOUR ID]
+- **Student**: G Sirinethikonda
+- **Student ID**: 23A91A61F1
 
 ## Features
 
