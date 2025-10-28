@@ -1,6 +1,5 @@
 {
   "connection": {
-<<<<<<< HEAD
     "host": "prod-db.example.com",
     "port": 5432,
     "database": "devops_production",
@@ -19,7 +18,7 @@
     "enabled": true,
     "replicas": 2,
     "sync_mode": "synchronous"
-=======
+
     "host": "localhost",
     "port": 5432,
     "database": "devops_development",
@@ -44,6 +43,6 @@
     "seed_data": true,
     "reset_on_restart": true,
     "debug_queries": true
->>>>>>> dev
+
   }
 }
